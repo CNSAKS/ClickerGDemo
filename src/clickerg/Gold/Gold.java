@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clickerg;
+package clickerg.Gold;
 
 import java.awt.Image;
 import java.net.URL;
@@ -22,7 +22,7 @@ import javafx.scene.paint.Color;
  *
  * @author adpeijar
  */
-public class FXMLDocumentController implements Initializable {
+public class Gold implements Initializable {
     
     private Label label;
     @FXML

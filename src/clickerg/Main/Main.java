@@ -3,23 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clickerg;
+package clickerg.Main;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
  *
  * @author adpeijar
  */
-public class ClickerG extends Application {
+public class Main extends Application {
+
+    @FXML
+    private Button bt_gold;
+    @FXML
+    private Button bt_boss;
+    @FXML
+    private Button bt_exp;
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Gold.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -32,6 +42,18 @@ public class ClickerG extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    @FXML
+    private void clickGold(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickBoss(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickExp(ActionEvent event) {
     }
     
 }
